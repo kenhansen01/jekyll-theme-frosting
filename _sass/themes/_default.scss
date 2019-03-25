@@ -1,0 +1,34 @@
+/// Main color
+/// @type Color
+/// @require $light-pink
+$main-color: $light-pink;
+
+/// Secondary color
+/// @type Color
+/// @require $dark-pink
+$secondary-color: $dark-pink;
+
+/// Note background
+/// @type Color
+/// @require $light-grey
+$note-background: $light-grey;
+
+/// Quote background
+/// @type Color
+/// @require $light-green
+$quote-background: $light-green;
+
+/// Code background
+/// @type Color
+/// @require $dark-grey
+$code-background: $dark-grey;
+
+/// Donate background
+/// @type Color
+/// @require $light-yellow
+$donate-background: $light-yellow;
+
+/// Figure background
+/// @type Color
+/// @require $light-yellow
+$figure-background: $light-grey;
