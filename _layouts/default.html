@@ -1,46 +1,42 @@
 ---
-layout: compress
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.language }}" dir="{{ page.direction|lower }}" class="no-js">
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-{% include layout/head.html %}
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
-<body id="top">
-  <!-- SVG sprite -->
-  {% include sprite.svg %}
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
 
-  <!-- Accessibility skip link -->
-  {% include partials/skip_link.html id = "skip" %}
-
-  <!-- Site header -->
-  {% include partials/header.html %}
-
-  <!-- Translation banner -->
-  {% include partials/translation_warning.html %}
-
-  <!-- Button to toggle the options panel -->
-  {% include partials/aside_opener.html %}
-
-  <!-- Main container -->
-  <main class="main" aria-label="Content" id="main-content">
-    <div class="container">
+    <div class="initial-content">
       {{ content }}
     </div>
-  </main>
 
-  <!-- Link to get back to top -->
-  {% include partials/top_link.html %}
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
 
-  <!-- Site footer -->
-  {% include partials/footer.html %}
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
 
-  <!-- Options panel -->
-  {% include partials/aside.html %}
+    {% include scripts.html %}
 
-  <!-- Scripts -->
-  {% include layout/scripts.html %}
-</body>
-
+  </body>
 </html>
