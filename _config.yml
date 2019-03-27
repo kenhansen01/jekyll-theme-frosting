@@ -1,0 +1,25 @@
+# Setup
+title:        Project or Site name
+tagline:      A responsive theme for your project on GitHub Pages
+baseurl:      ""
+paginate:     1
+locale:       "en"
+
+# About/contact
+author:
+  name:       Author name
+  url:        http://yourhomepage.com 
+
+# Gems
+gems:
+  - jekyll-paginate
+
+plugins:
+  - jekyll-include-cache
+
+#Analytics
+analytics:
+  google:
+    tracking_id: UA-136792458-1
+#Others
+markdown: kramdown

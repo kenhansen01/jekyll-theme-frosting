@@ -1,4 +1,3 @@
-
 <!-- Main JavaScript file, bundled by Netlify -->
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
@@ -15,21 +14,19 @@
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}
-  {%- assign search_provider = site.search_provider | default: "lunr" -%}
-  {%- case search_provider -%}
+  {%- assign search_provider = site.search_provider | default: "google" -%}
+  <!-- {%- case search_provider -%}
     {%- when "lunr" -%}
-      {% include_cached search/lunr-search-scripts.html %}
-    {%- when "google" -%}
+      {% include_cached search/lunr-search-scripts.html %} 
+    {%- when "google" -%} -->
       {% include_cached search/google-search-scripts.html %}
-    {%- when "algolia" -%}
+    <!-- {%- when "algolia" -%}
       {% include_cached search/algolia-search-scripts.html %}
-  {%- endcase -%}
+  {%- endcase -%} -->
 {% endif %}
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
-
-
 
 <script defer
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -37,15 +34,3 @@
   crossorigin="anonymous">
 </script>
 <script defer src="/assets/js/vendor/greedynav.js"></script>
-
-{% if site.environment == 'production' %}
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136792458-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-136792458-1');
-</script>
-{% endif %}
