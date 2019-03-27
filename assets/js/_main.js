@@ -18,25 +18,25 @@
     // // FitVids init
     // $("#main").fitVids();
   
-    // Sticky sidebar
-    var stickySideBar = function() {
+    // Sticky ingredients
+    var stickyingredients = function() {
       var show =
         $(".author__urls-wrapper button").length === 0
           ? $(window).width() > 1024 // width should match $large Sass variable
           : !$(".author__urls-wrapper button").is(":visible");
       if (show) {
         // fix
-        $(".sidebar").addClass("sticky");
+        $(".ingredients").addClass("sticky");
       } else {
         // unfix
-        $(".sidebar").removeClass("sticky");
+        $(".ingredients").removeClass("sticky");
       }
     };
   
-    stickySideBar();
+    stickyingredients();
   
     $(window).resize(function() {
-      stickySideBar();
+      stickyingredients();
     });
   
     // Follow menu drop down

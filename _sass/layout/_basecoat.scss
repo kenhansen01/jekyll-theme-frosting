@@ -1,0 +1,14 @@
+.basecoat {
+  max-width: $max-width;
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-areas:
+   "ingredients"
+   "mixer";
+  
+  @include media('>large'){
+    grid-template-columns: 25% auto;
+    grid-template-areas:
+      "ingredients mixer";
+  }
+}

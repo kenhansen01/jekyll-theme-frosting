@@ -1,39 +1,37 @@
-@charset 'UTF-8';
+/*!
+ * Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+ * Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+ * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
+*/
 
-@import "abstracts/mixins";
+/* Variables */
 @import "abstracts/variables";
-@import "abstracts/functions";
 
+/* Mixins and functions */
 @import "vendors/normalize";
 @import "vendors/include-media";
+@import "abstracts/mixins";
 
+/* Core CSS */
 @import "base/base";
-@import "base/typography";
+@import "base/forms";
+@import "base/tables";
+@import "base/animations";
 
-@import "components/blockquote";
-@import "components/button";
-@import "components/code";
-@import "components/donate";
-@import "components/heading-anchors";
-@import "components/icons";
-@import "components/image";
-@import "components/note";
-@import "components/skip";
-@import "components/translation-warning";
+/* Components */
+@import "components/buttons";
+@import "components/notices";
+@import "components/masthead";
+@import "components/navigation";
+@import "components/footer";
+@import "components/search";
+@import "components/syntax";
 
-@import "vendors/select";
+/* Utility classes */
+@import "utilities/utilities";
 
-@import "layout/aside";
-@import "layout/chapter";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/main";
-@import "layout/toc";
-
-@import "base/print";
-
-@import
-  'pages/home';
-
-@import
-  'themes/default';
+/* Layout specific */
+@import "layout/page";
+@import "layout/basecoat";
+@import "layout/ingredients";
+@import "layout/print";

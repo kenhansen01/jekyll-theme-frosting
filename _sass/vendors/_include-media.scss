@@ -222,7 +222,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
 ///
 /// @return {Boolean} - Returns true if the conditions are intercepted by the static breakpoint
 ///
-@function im-intercepts-static-breakpoint($conditions...) {
+@function im-intercepts-static-media($conditions...) {
   $no-media-breakpoint-value: map-get($breakpoints, $im-no-media-breakpoint);
 
   @if not $no-media-breakpoint-value {
@@ -549,7 +549,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
 @mixin media($conditions...) {
   // scss-lint:disable SpaceAroundOperator
   @if ($im-media-support and length($conditions) == 0) or
-      (not $im-media-support and im-intercepts-static-breakpoint($conditions...)) {
+      (not $im-media-support and im-intercepts-static-media($conditions...)) {
     @content;
   } @else if ($im-media-support and length($conditions) > 0) {
     @media #{unquote(parse-expression(nth($conditions, 1)))} {

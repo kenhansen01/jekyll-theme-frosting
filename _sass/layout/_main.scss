@@ -9,7 +9,7 @@
   position: relative; /* 1 */
 
   @include media('>large') {
-    padding-left: $sidebar-width; /* 2 */
+    padding-left: $ingredients-width; /* 2 */
   }
 }
 

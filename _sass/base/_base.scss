@@ -235,7 +235,7 @@
     &.half {
       > a,
       > img {
-        @include breakpoint($small) {
+        @include media('<small') {
           width: calc(50% - 0.5em);
         }
       }
@@ -248,7 +248,7 @@
     &.third {
       > a,
       > img {
-        @include breakpoint($small) {
+        @include media('<small') {
           width: calc(33.3333% - 0.5em);
         }
       }
@@ -351,7 +351,7 @@
   input[type="submit"],
   .btn,
   .highlight,
-  .archive__item-teaser {
+  .mixer__item-teaser {
     -webkit-transition: $global-transition;
     transition: $global-transition;
   }

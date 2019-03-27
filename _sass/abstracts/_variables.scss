@@ -131,20 +131,22 @@
      'small': 320px,
      'medium': 640px,
      'large': 960px,
-     'xlarge': 1200px
+     'x-large': 1200px
    );
-  //  $small: 600px !default;
-  //  $medium: 768px !default;
-  //  $medium-wide: 900px !default;
-  //  $large: 1024px !default;
-  //  $x-large: 1280px !default;
+   $small: 600px !default;
+   $medium: 768px !default;
+   $medium-wide: 900px !default;
+   $large: 1024px !default;
+   $x-large: 1280px !default;
 /*
    Grid
    ========================================================================== */
+   $grid-gap: 0em !default;
+   $max-width: 1280px !default;
 
-   $right-sidebar-width-narrow: 200px !default;
-   $right-sidebar-width: 300px !default;
-   $right-sidebar-width-wide: 400px !default;
+   $right-ingredients-width-narrow: 200px !default;
+   $right-ingredients-width: 300px !default;
+   $right-ingredients-width-wide: 400px !default;
    
   //  $aside-width: 35%;
   //  $content-width: 62%;
