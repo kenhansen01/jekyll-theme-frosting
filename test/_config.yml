@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 theme                    : "jekyll-theme-frosting"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+flavor                   : "chocolate" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -57,7 +57,9 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : "google"
+search_provider          : "lunr"
+  # google:
+  #   search_engine_id     : '016283550037499526730:b3bledylt0o'
 # algolia:
 #   application_id         : "QB6HVGBSBA"
 #   index_name             : "dev_minimal-mistakes"

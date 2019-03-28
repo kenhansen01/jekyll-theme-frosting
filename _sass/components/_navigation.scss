@@ -168,7 +168,7 @@
      Priority plus navigation
      ========================================================================== */
 
-.greedy-nav {
+.greedy {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,7 +318,7 @@
 }
 
 .no-js {
-  .greedy-nav {
+  .greedy {
     .visible-links {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
