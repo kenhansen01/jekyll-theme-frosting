@@ -70,44 +70,44 @@
     }
   }
   
-  // .ingredients__right {
-  //   margin-bottom: 1em;
+  .ingredients__right {
+    margin-bottom: 1em;
   
-  //   @include media('>large') {
-  //     position: absolute;
-  //     top: 0;
-  //     right: 0;
-  //     width: $right-ingredients-width-narrow;
-  //     margin-right: -1 * $right-ingredients-width-narrow;
-  //     padding-left: 1em;
-  //     z-index: 10;
+    @include media('>large') {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $right-ingredients-width-narrow;
+      margin-right: -1 * $right-ingredients-width-narrow;
+      padding-left: 1em;
+      z-index: 10;
   
-  //     &.sticky {
-  //       @include clearfix();
-  //       position: -webkit-sticky;
-  //       position: sticky;
-  //       top: 2em;
-  //       float: right;
-  //     }
-  //   }
+      &.sticky {
+        @include clearfix();
+        position: -webkit-sticky;
+        position: sticky;
+        top: 2em;
+        float: right;
+      }
+    }
   
-  //   @include media('>x-large') {
-  //     width: $right-ingredients-width;
-  //     margin-right: -1 * $right-ingredients-width;
-  //   }
-  // }
+    @include media('>x-large') {
+      width: $right-ingredients-width;
+      margin-right: -1 * $right-ingredients-width;
+    }
+  }
   
-  // .splash .ingredients__right {
-  //   @include media('>large') {
-  //     position: relative;
-  //     float: right;
-  //     margin-right: 0;
-  //   }
+  .splash .ingredients__right {
+    @include media('>large') {
+      position: relative;
+      float: right;
+      margin-right: 0;
+    }
   
-  //   @include media('>x-large') {
-  //     margin-right: 0;
-  //   }
-  // }
+    @include media('>x-large') {
+      margin-right: 0;
+    }
+  }
   
   /*
      Author profile and links
