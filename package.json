@@ -1,22 +1,22 @@
 {
   "name": "jekyll-theme-frosting",
-  "version": "4.15.2",
-  "description": "Minimal Mistakes 2 column Jekyll theme.",
+  "version": "0.1.0",
+  "description": "Frosting Jekyll theme.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git://github.com/kenhansen01/jekyll-theme-frosting.git"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "author": "Michael Rose",
+  "author": "Ken Hansen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": "https://github.com/kenhansen01/jekyll-theme-frosting/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "https://kenhansen01.github.io/jekyll-theme-frosting/",
   "engines": {
     "node": ">= 0.10.0"
   },
