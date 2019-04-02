@@ -74,26 +74,26 @@
     margin-bottom: 1em;
   
     @include media('>large') {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: $right-ingredients-width-narrow;
-      margin-right: -1 * $right-ingredients-width-narrow;
-      padding-left: 1em;
-      z-index: 10;
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // width: $right-ingredients-width-narrow;
+      // margin-right: -1 * $right-ingredients-width-narrow;
+      // padding-left: 1em;
+      // z-index: 10;
   
       &.sticky {
-        @include clearfix();
+        // @include clearfix();
         position: -webkit-sticky;
         position: sticky;
         top: 2em;
-        float: right;
+        // float: right;
       }
     }
   
     @include media('>x-large') {
-      width: $right-ingredients-width;
-      margin-right: -1 * $right-ingredients-width;
+      // width: $right-ingredients-width;
+      // margin-right: -1 * $right-ingredients-width;
     }
   }
   

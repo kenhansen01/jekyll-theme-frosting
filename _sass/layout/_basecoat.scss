@@ -9,6 +9,7 @@
   @include media('>large'){
     grid-template-columns: 25% auto;
     grid-template-areas:
-      "ingredients mixer";
+      "ingredients mixer"
+      "related related";
   }
 }
