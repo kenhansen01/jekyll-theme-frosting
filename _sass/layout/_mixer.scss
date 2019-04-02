@@ -7,13 +7,13 @@
   margin-bottom: 2em;
 
   @include media('>large') {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    // float: right;
+    // width: calc(100% - #{$right-sidebar-width-narrow});
+    // padding-right: $right-sidebar-width-narrow;
   }
 
   @include media('>x-large') {
-    width: calc(100% - #{$right-sidebar-width});
+    // width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 }
@@ -131,7 +131,7 @@
     /* extend grid elements to the right */
 
     @include media('>large') {
-      margin-right: -1 * $right-sidebar-width-narrow;
+      // margin-right: -1 * $right-sidebar-width-narrow;
     }
 
     @include media('>x-large') {
