@@ -17,7 +17,7 @@ title_separator          : "-"
 name                     : "Ken Hansen"
 description              : "A tasty theme."
 url                      : "https://kenhansen01.github.io" # the base hostname & protocol for your site
-baseurl                  : "/"
+baseurl                  : "/jekyll-theme-frosting"
 repository               : "kenhansen01/jekyll-theme-frosting" # GitHub username/repo-name e.g. "kenhansen01/jekyll-theme-frosting"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/frosting.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
