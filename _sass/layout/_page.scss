@@ -3,25 +3,25 @@
    ========================================================================== */
 
 #main {
-  @include clearfix;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  // @include clearfix;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding-left: 1em;
+  // padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
-  max-width: 100%;
+  // max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
-  @include media('>x-large') {
-    max-width: $max-width;
-  }
+  // @include media('>x-large') {
+  //   max-width: $max-width;
+  // }
 }
 
 .page {
   @include media('>large') {
-    float: right;
+    // float: right;
     // width: calc(100% - #{$right-sidebar-width-narrow});
     // padding-right: $right-sidebar-width-narrow;
   }
@@ -32,22 +32,34 @@
   }
 
   .page__inner-wrap {
-    float: left;
+    // float: left;
     margin-top: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    clear: both;
+    // margin-left: 0;
+    // margin-right: 0;
+    // width: 100%;
+    // clear: both;
 
     .page__content,
     .page__meta,
     .page__share {
-      position: relative;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
-      clear: both;
+      // position: relative;
+      // float: left;
+      // margin-left: 0;
+      // margin-right: 0;
+      // width: 100%;
+      // clear: both;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-column-gap: 5px;
+      grid-auto-rows: minmax(50px, auto);
+      
+      > .page__main-content {
+        grid-column: 1;
+      }
+
+      .ingredients_right {
+        grid-column: 2
+      }
     }
   }
 }
