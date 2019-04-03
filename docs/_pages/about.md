@@ -17,16 +17,17 @@ toc_label: "Options"
 toc: true
 ---
 
-Oh hi!
+# Oh hi!
 
 Nice that you decided to stop by. I'm a father of a wonderful child, spouse to an amazing woman, planet loving tree-hugger, and a fighter for justice. My job is that of a SharePoint Architect. :smile:.
 
 <!-- {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %} -->
 
 ## About the site
+
 So, I have learned a lot from the developers out there that put their hard work up for all to see and use. I wouldn't be where I am without their generous help. This is all about paying it forward.
 
-A lot of what you will find here is SharePoint centric. Sometimes even very specific to whatever job I had when I made the repo. But there are other fun things too. I will add more when I have time. 
+A lot of what you will find here is SharePoint centric. Sometimes even very specific to whatever job I had when I made the repo. But there are other fun things too. I will add more when I have time.
 
 ## Demo Pages
 
@@ -42,10 +43,6 @@ A lot of what you will find here is SharePoint centric. Sometimes even very spec
 
 For even more demo pages check the [posts mixer][year-mixer].
 
-<!-- [header-image-post]: {{ "" | relative_url }}{% post_url 2012-03-15-layout-header-image-text-readability %}
-[gallery-post]: {{ "" | relative_url }}{% post_url 2010-09-09-post-gallery %}
-[html-tags-post]: {{ "" | relative_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
-[syntax-post]: {{ "" | relative_url }}{% post_url 2013-08-16-markup-syntax-highlighting %} -->
 [sample-collection]: {{ "/recipes/chocolate-chip-cookies/" | relative_url }}
 [categories-mixer]: {{ "/categories/" | relative_url }}
 [tags-mixer]: {{ "/tags/" | relative_url }}
@@ -75,4 +72,4 @@ For even more demo pages check the [posts mixer][year-mixer].
 
 ---
 
-Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
+Frosting is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
