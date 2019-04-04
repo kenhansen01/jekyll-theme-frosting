@@ -13,3 +13,10 @@
       "ingredients related";
   }
 }
+
+.layout--splash {
+  .basecoat {
+    max-width: $max-width;
+    display: block;
+  }
+}
