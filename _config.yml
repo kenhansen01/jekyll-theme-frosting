@@ -21,7 +21,8 @@ plugins:
 
 #Analytics
 analytics:
-  google-gtag:
+  provider: "google-gtag"
+  google:
     tracking_id: UA-136792458-1
 #Others
 markdown: kramdown
